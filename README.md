@@ -2,7 +2,7 @@
 
 > `Navegación:` [Módulo 2](https://github.com/git-jrm/ing-datos-M2), [Módulo 3](https://github.com/git-jrm/ing-datos-M3), [Módulo 4](https://github.com/git-jrm/ing-datos-M4), [Módulo 5](https://github.com/git-jrm/ing-datos-M5)
 
-En esta página se recopila el desarrollo del Proyecto: **Arquitectura Datos** del módulo 5 del bootcamp de ing de datos.
+En esta página se desarrolla el proyecto completo "**Arquitectura Datos**" del módulo 5 del bootcamp de ing de datos. La solución está dividida en etapas cada una aborda aspectos diferentes.
 
 ## Índice:
 - [Etapa 1: Arquitectura de Datos](#)
@@ -14,7 +14,16 @@ En esta página se recopila el desarrollo del Proyecto: **Arquitectura Datos** d
 
 ## Etapa 1: Arquitectura de Datos
 
+Objetivo: Diseñar un esquema arquitectónico robusto para la integración, almacenamiento y consumo de datos.
+Desarrollar: 
+-tres fuentes de datos, 
+-capas: ingesta, integración, almacenamiento, calidad y consumo.
+-principios de gobierno, escalabilidad y flexibilidad.
+-diagrama
+
 ### Aspecto técnico
+
+
 
 ### Diagrama
 
