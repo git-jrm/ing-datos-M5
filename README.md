@@ -23,11 +23,11 @@ Para el diseño de la solución se han identificado 3 fuentes de datos los cuale
   - Ingesta (Fuentes de datos):
     - Sistema de ventas (transaccional)
     - Redes sociales (no relacional)
-    -CRM (relacional)
-  -Integración (ETL)
-  -Almacenamiento (Data Warehouse)
-  -Calidad (Gobernanza)
-  -Consumo (Visualización)
+    - CRM (relacional)
+  - Integración (ETL)
+  - Almacenamiento (Data Warehouse)
+  - Calidad (Gobernanza)
+  - Consumo (Visualización)
 
 ### Diagrama ...
 
