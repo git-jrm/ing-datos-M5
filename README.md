@@ -19,10 +19,10 @@ Objetivo: Diseñar un esquema arquitectónico robusto para la integración, alma
 
 Para el diseño de la solución se han identificado 3 fuentes de datos los cuales son:
 
-Arquitectura de Data por Capas: .
-  -Ingesta (Fuentes de datos):
-    -Sistema de ventas (transaccional)
-    -Redes sociales (no relacional)
+- Arquitectura de Data por Capas:
+  - Ingesta (Fuentes de datos):
+    - Sistema de ventas (transaccional)
+    - Redes sociales (no relacional)
     -CRM (relacional)
   -Integración (ETL)
   -Almacenamiento (Data Warehouse)
