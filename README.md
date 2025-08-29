@@ -83,5 +83,5 @@ Arquitectura de Data por Capas:
 
 ```mermaid
 graph TD;
-  A-->H;
+  START-->END;
 ```
