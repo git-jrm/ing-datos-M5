@@ -86,3 +86,15 @@ graph TD;
   E-->T;
   T-->L;
 ```
+
+```mermaid
+graph LR;
+  E-->T;
+  T-->L;
+```
+
+```mermaid
+graph BU;
+  E-->T;
+  T-->L;
+```
