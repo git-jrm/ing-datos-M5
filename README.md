@@ -93,8 +93,15 @@ graph LR;
   T-->L;
 ```
 
-```mermaid
-graph BU;
-  E-->T;
-  T-->L;
+```dot
+diagraph G {
+  E -> T
+  T -> L
+}
+```
+```dot (enfine="circo")
+diagraph G {
+  E -> T
+  T -> L
+}
 ```
