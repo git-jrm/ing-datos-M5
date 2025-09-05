@@ -49,7 +49,6 @@ graph LR;
   ELT-->DataLake;
 ```
 
-  - Almacenamiento (Data Warehouse)
   - Calidad (Gobernanza)
   - Consumo (Visualización)
 
@@ -60,9 +59,9 @@ Herramientas por capas:
 · Acceso: Power BI, Tableau.
 · Seguridad: cifrado en reposo y en tránsito mediante AWS y acceso con IAM.
 
-### Principios aplicados
+### Gobernanza
 
-Dentro de todas las consideraciones que se tuvieron según el marco DAMA-DMBOK se destacan las siguiente:
+Para la Gobernanza se aplicaron los principios del marco DAMA-DMBOK destando los siguientes aspectos:
 
 · Calidad de datos: Garantizar la precisión y consistencia.
 
