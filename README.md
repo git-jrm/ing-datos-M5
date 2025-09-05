@@ -105,17 +105,47 @@ Arquitectura de Data por Capas:
 ## Etapa 4: Modelamiento Multidimensional
 
 ### Introducción
+
+En la actualidad la empresa Mercato del sector retail está comenzando a tener problemas de ralentización en el sistema ocasionado por la carga que supone los procesos de analitica del departamento de business intelligence quienes requieren con urgencia mejorar su sistema de analitica. Esta situación impacta a toda la organización por lo que es prioritaria.
+
 ### Diagnóstico
+
+Luego de un análisis de la situación se concluyó que la lentitud que se ha empezado a reportar este último periodo está siendo generada actualmente por el sistema realtime de analitica que realiza sus consultas directamente a la base de datos transaccional OLTP.
+
+Esto además de carga de procesamiento ha comenzado a generar complejidad operativa en el sistema de consultas con relaciones complejas.
+
 ### Propuesta
-### Gobernanza
+
+Diseño modelo multidimensional:
+
+Definimos a nivel de Gobernanza de Datos una implementación de una solución de Data Warehouse, con enfoque bottom-up de Ralph Kimball. Esto nos permitirá centrarnos en el modelado multidimensional del Data Mart del área inteligencia de negocios.
+
+Como analista de datos vamos a realizar una propuesta desarrollando el modelado multidimensional para los hechos de ventas y sus dimensiones relevantes. Mediante un cubo OLAP para análisis de hechos de ventas.
+
+Tabla de hechos “Ventas”: id_p, id_c, id_s, id_t, cantidad, importe_unitario, importe_total.
+Tabla de dimensiones Producto, Cliente, Sucursal, Tiempo.
+
+Jerarquías y atributos de las dimensiones:
+
+Producto: SKU → subcategoría → categoría (nombre_producto, marca, modelo)
+Cliente: nicho → segmento → tipo (nombre_cliente, edad, email)
+Sucursal: ciudad → región →país (nombre_sucursal, dirección, comuna).
+Tiempo: día → mes → año (nombre_dia, dia_habil, descuento)
+
+Con esta solución optimizada para lectura obtenemos escalabilidad, rendimiento analítico, facilidad para las consultas y presión para la toma de decisiones estratégicas.
+
 ### Justificación de diseño
 
+Se optó por modelar un esquema estrella más simple que el esquema copo de nieve, ya que tiene menos tablas que mantener la complejidad es más baja, también la complejidad de las consultas.
+
+El esquema al estar orientado a consultas simples realiza una desnormalización controlada ganando simplicidad y eficiencia. Además es evolutivo porque facilita agregar nuevas dimensiones y métricas si se requiere.
+
+Se complementa con la implementación de Slowly Changing Dimensions “Type 4”, para una tabla separada con data histórica (ej: más de 3 años).
 
 
 ## Análisis transversal
 
 análisis transversal
-
 
 
 ## Conclusión
