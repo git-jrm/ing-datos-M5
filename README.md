@@ -74,6 +74,9 @@ La arquitectura propuesta separa el almacenamiento y procesamiento, permitiendo 
 
 ## Etapa 2: Enfoques para el Almacenamiento y Gestión de los Datos
 
+
+
+
 Objetivo: Definir y justificar las estrategias de almacenamiento y gobernanza de los datos, alineadas al diseño arquitectónico.
 
 ### Aspecto técnico
