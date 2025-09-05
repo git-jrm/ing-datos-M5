@@ -37,7 +37,8 @@ Se propone una arquitectura basada en capas que separa responsabilidades:
 - Acceso: Dashboards de BI.
 - Seguridad: Cifrado de datos. Control de acceso.
 
-Diagrama de fuentes de datos:
+Diagrama que muestra la ingesta, integración y almacenamiento de los datos:
+
 ```mermaid
 graph LR;
   DatosClínicos-->ETL;
