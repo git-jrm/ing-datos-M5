@@ -44,9 +44,9 @@ Diagrama que muestra la ingesta, integración y almacenamiento de los datos:
 graph LR;
   DatosClínicos-->ETL;
   formularios-->ETL;
-  IoT-->ELT;
-  correos-->ELT;
-  ELT-->DataLake;
+  IoT-->DataLake;
+  correos-->DataLake;
+  DataLake-->ELT;
   ETL-->DataWarehouse;
   DataLake-->DataWarehouse;
 ```
