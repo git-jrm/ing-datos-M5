@@ -9,7 +9,7 @@ En esta página se desarrolla el proyecto del módulo 5 del bootcamp de ing de d
 - [Etapa 2: Enfoques para el Almacenamiento y Gestión de los Datos](#)
 - [Etapa 3: Calidad de los Datos](#)
 - [Etapa 4: Modelamiento Multidimensional](#)
-- [Análisis transversal](#)
+- [Análisis transversal](#an%C3%A1lisis-transversal)
 - [Conclusión](#conclusi%C3%B3n)
 
 ## Etapa 1: Arquitectura de Datos
