@@ -10,7 +10,7 @@ En esta página se desarrolla el proyecto del módulo 5 del bootcamp de ing de d
 - [Etapa 3: Calidad de los Datos](#)
 - [Etapa 4: Modelamiento Multidimensional](#)
 - [Análisis transversal](#)
-- [Conclusión: ](#)
+- [Conclusión: ](#conclusi%C3%B3n)
 
 ## Etapa 1: Arquitectura de Datos
 
