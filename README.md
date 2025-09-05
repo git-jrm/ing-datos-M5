@@ -43,16 +43,11 @@ graph LR;
   DatosClínicos-->ETL;
   IoT-->ETL;
   formularios-->ETL;
-  correos-->ETL;
-  ETL-->BaseDeDatos;
+  correos-->ELT;
+  ETL-->DataWarehouse;
+  ELT-->DataLake;
 ```
 
-- Arquitectura de Data por Capas:
-  - Ingesta (Fuentes de datos):
-    - Sistema de ventas (transaccional)
-    - Redes sociales (no relacional)
-    - CRM (relacional)
-  - Integración (ETL)
   - Almacenamiento (Data Warehouse)
   - Calidad (Gobernanza)
   - Consumo (Visualización)
