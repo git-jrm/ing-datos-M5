@@ -122,8 +122,7 @@ graph LR;
   CURATED-->|Métricas finales|DataWarehouse;
   RAW-->DQ_Dashboard;
   TRUSTED-->DQ_Dashboard;
-  CURATED-->DQ_Dashboard;RetryClaude does not have the ability to run the code it generates yet.
-
+  CURATED-->DQ_Dashboard;
 ```
 
 - Definir los controles, métricas e indicadores de calidad aplicables en cada etapa del flujo de datos:
