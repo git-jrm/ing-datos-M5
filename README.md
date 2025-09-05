@@ -62,12 +62,9 @@ Para la Gobernanza se aplicaron los principios del marco DAMA-DMBOK destando los
 - Calidad de datos: Garantizar la precisión y consistencia.
 - Arquitectura de datos: permite la escalabilidad del sistema, promueve el reuso de componentes y facilita la trazabilidad de los datos.
 - Modelado y diseño de datos: organiza los datos para una mejor comprensión y uso, asegurando su consistencia y eficiencia en el acceso.
-
-· Seguridad de datos: proteger la información sensible en reposo, en tránsito y en uso.
-
-· Integración e interoperabilidad de datos: unifica datos de diversas fuentes, permitiendo que sistemas diferentes se comuniquen de manera fluida.
-
-· Data warehousing & business intelligence: proporciona una vista consolidada de los datos para análisis, facilitando la toma de decisiones estratégicas.
+- Seguridad de datos: proteger la información sensible en reposo, en tránsito y en uso.
+- Integración e interoperabilidad de datos: unifica datos de diversas fuentes, permitiendo que sistemas diferentes se comuniquen de manera fluida.
+- Data warehousing & business intelligence: proporciona una vista consolidada de los datos para análisis, facilitando la toma de decisiones estratégicas.
 
 ### Justificación de diseño
 
