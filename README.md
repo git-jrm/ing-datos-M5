@@ -96,25 +96,25 @@ Para la Gobernanza se recomiendan las prácticas del DAMA-DMBOK destacando:
 
 Objetivo: Diseñar un plan de aseguramiento de calidad de los datos, integrado a la arquitectura definida.
 
-Controles por etapa:
+### Controles por etapa
 
 - Ingesta (RAW): validación de formatos, detección de archivos corruptos, verificación de esquemas
 - Procesamiento (TRUSTED): reglas de limpieza, detección de duplicados, validación de rangos y dominios.
 - Curación (CURATED): consistencia referencial, completitud de datos, exactitud de métricas calculadas.
 
-Métricas e indicadores:
+### Métricas e indicadores
 
 Completitud (% datos faltantes), exactitud (% errores), consistencia (duplicados), puntualidad (latencia de carga).
 
-Monitoreo y calidad:
+### Monitoreo y calidad
 
 Implementación de data quality dashboards con alertas automáticas cuando las métricas superen umbrales críticos (ej: >5% datos faltantes). Plan de remediación con escalamiento automático al equipo de datos y re-procesamiento de lotes afectados.
 
-Integración en arquitectura:
+### Integración en arquitectura
 
 Los controles de calidad se ejecutan en cada zona del Data Lake usando AWS Glue DataBrew y Apache Griffin, con resultados almacenados en tablas de auditoría para trazabilidad completa del linaje de datos.
 
-Diagrama
+Diagrama de proceso de monitoreo y remediación:
 ```mermaid
 graph LR;
   RAW-->|Validación básica|TRUSTED;
