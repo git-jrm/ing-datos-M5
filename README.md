@@ -49,16 +49,10 @@ graph LR;
   ETL-->DataWarehouse;
   ELT-->DataLake;
 ```
-Herramientas por capas:
-
-- Almacenamiento: Amazon S3 (Data Lake), Amazon Redshift (Data Warehouse).
-- Procesamiento: Apache Spark y AWS Glue.
-- Acceso: Power BI, Tableau.
-- Seguridad: cifrado en reposo y en tránsito mediante AWS y acceso con IAM.
 
 ### Gobernanza
 
-Para la Gobernanza se aplicaron los principios del marco DAMA-DMBOK destando los siguientes aspectos:
+Para la Gobernanza se aplicaron los principios del marco DAMA-DMBOK destacando los siguientes aspectos:
 
 - Calidad de datos: Garantizar la precisión y consistencia.
 - Arquitectura de datos: permite la escalabilidad del sistema, promueve el reuso de componentes y facilita la trazabilidad de los datos.
@@ -74,26 +68,23 @@ La arquitectura propuesta separa el almacenamiento y procesamiento, permitiendo 
 
 ## Etapa 2: Enfoques para el Almacenamiento y Gestión de los Datos
 
+### Tecnologías sugeridas
 
+Las herramientas y tecnologías sugeridas por capas son:
 
+- Almacenamiento: Amazon S3 (Data Lake), Amazon Redshift (Data Warehouse).
+- Procesamiento: Apache Spark y AWS Glue.
+- Acceso: Power BI, Tableau.
+- Seguridad: cifrado en reposo y en tránsito mediante AWS y acceso con IAM.
 
-Objetivo: Definir y justificar las estrategias de almacenamiento y gobernanza de los datos, alineadas al diseño arquitectónico.
+### Gobernanza
 
-### Aspecto técnico
+Para la Gobernanza se recomiendan las prácticas del DAMA-DMBOK destacando:
 
-Arquitectura de Data por Capas: 
-  -Ingesta (Fuentes de datos):
-    -Sistema de ventas (transaccional) --> Data Mart ventas
-    -Redes sociales (no relacional) --> Data Lake rrss
-    -CRM (relacional) --> Data Lake clientes
-  -Integración (ETL)
-  -Almacenamiento (Data Warehouse)
-  -Calidad (Gobernanza)
-  -Consumo (Visualización)
-
-### Diagrama ...
-
-### Justificación
+- Master Data Management: se define utilizar datos maestros únicos para: pacientes, médicos, historial, tratamientos. Para evitar duplicaciones y mantener la consistencia.
+- Gestión de metadatos: se implementa catálogo de datos centralizado, documentar fuentes, transformaciones y linaje para trazabilidad.
+- Gestión del ciclo de vida de los datos: se definir políticas para la retención de 3 años de datos, y luego pasa a archivo seguro de información médica.
+- Operaciones de datos: se establece procedimiento de monitoreo y backup diario. Y plan de recuperación de catastrofes de menos de 1 horas, garantizando disponibilidad y continuidad del servicio.
 
 
 ## Etapa 3: Calidad de los Datos
