@@ -59,11 +59,9 @@ Herramientas por capas:
 
 Para la Gobernanza se aplicaron los principios del marco DAMA-DMBOK destando los siguientes aspectos:
 
-· Calidad de datos: Garantizar la precisión y consistencia.
-
-· Arquitectura de datos: permite la escalabilidad del sistema, promueve el reuso de componentes y facilita la trazabilidad de los datos.
-
-· Modelado y diseño de datos: organiza los datos para una mejor comprensión y uso, asegurando su consistencia y eficiencia en el acceso.
+- Calidad de datos: Garantizar la precisión y consistencia.
+- Arquitectura de datos: permite la escalabilidad del sistema, promueve el reuso de componentes y facilita la trazabilidad de los datos.
+- Modelado y diseño de datos: organiza los datos para una mejor comprensión y uso, asegurando su consistencia y eficiencia en el acceso.
 
 · Seguridad de datos: proteger la información sensible en reposo, en tránsito y en uso.
 
