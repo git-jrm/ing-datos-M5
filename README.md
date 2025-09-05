@@ -48,7 +48,6 @@ graph LR;
   correos-->DataLake;
   DataLake-->ETL;
   ETL-->DataWarehouse;
-  DataLake-->DataWarehouse;
 ```
 
 ### Gobernanza
