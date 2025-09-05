@@ -103,15 +103,18 @@ Arquitectura de Data por Capas:
 
 ## Etapa 4: Modelamiento Multidimensional
 
-### Aspecto técnico
+### Introducción
+### Diagnóstico
+### Propuesta
+### Gobernanza
+### Justificación de diseño
 
-### Diagrama
-
-### Justificación
 
 
 ## Conclusión
 
+Conclusión y análisis transversal
+ 
 
 #### ...
 
