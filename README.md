@@ -31,19 +31,19 @@ Además la dirección y el staff médico han perdido la confianza en los reporte
 
 Se propone una arquitectura basada en capas que separa responsabilidades:
 
-· Fuentes de datos: Datos clínicos, IoT, formularios, correos.
-· Almacenamiento: Data Lake (no estructurados), Data Warehouse (estructurados).
-· Procesamiento: ETL/ELT.
-· Acceso: Dashboards de BI.
-· Seguridad: Cifrado de datos. Control de acceso.
+- Fuentes de datos: Datos clínicos, IoT, formularios, correos.
+- Almacenamiento: Data Lake (no estructurados), Data Warehouse (estructurados).
+- Procesamiento: ETL/ELT.
+- Acceso: Dashboards de BI.
+- Seguridad: Cifrado de datos. Control de acceso.
 
 Diagrama de fuentes de datos:
 ```mermaid
 graph LR;
-  DatosClínicos-->T;
-  IoT-->T;
-  formularios-->T;
-  correos-->T;
+  DatosClínicos(E)-->T;
+  IoT(E)-->T;
+  formularios(E)-->T;
+  correos(E)-->T;
   T-->L;
 ```
 
