@@ -173,23 +173,17 @@ Se complementa con la implementación de Slowly Changing Dimensions “Type 4”
 
 ## Análisis transversal
 
-análisis transversal 1:
-La implementación de la arquitectura de datos propuesta para InfoHealth representa un paso decisivo hacia la madurez digital. Las principales ventajas de esta nueva arquitectura son la mejora en la calidad, integridad y seguridad de la información, además de garantizar el cumplimiento normativo (según la norma IEC 62304), lo cual transmite confianza a los pacientes y a la comunidad en general.
-
-También aprendimos la relevancia de dar cumplimiento y mantenerse actualizado sobre normativas vigentes de la industria, como lo es en este caso la HIPPA si el sistema funcionará en EEUU, además de normas como la GDPR en Europa y CCPA en California.
-
-análisis transversal 2 (quizas no sea necesario desarrollar):
-análisis transversal 3 (quizas no sea necesario desarrollar):
-
-análisis transversal 4:
-La implementación del Data Warehouse con modelo estrella representa una solución técnicamente sólida para los problemas actuales de Mercato, sin embargo su éxito también dependerá de una correcta implementación y adopción a nivel organizacional de  la Gobernanza.
-
-El enfoque bottom-up de Ralph Kimball proporciona flexibilidad incremental al permitir desarrollar Data Marts específicos por área, reduciendo riesgos y complejidad inicial además facilita la adopción gradual.
-
-El modelado multidimensional del cubo OLAP permitirá un análisis ágil y profundo de los datos de ventas, potenciando la toma de decisiones estratégicas basadas en información confiable y oportuna, clave para el crecimiento sostenible de Mercato.
+- Transformación digital sectorial: Ambos casos (InfoHealth y Mercato) evidencian cómo la falta de arquitectura de datos impacta directamente en la operación empresarial. En el sector salud, la pérdida de confianza en los reportes compromete decisiones críticas, mientras que en retail, la lentitud del sistema afecta la competitividad comercial.
+- Gobernanza como factor crítico: La implementación exitosa de las soluciones técnicas propuestas (Data Lake multicapa, Data Warehouse multidimensional) depende fundamentalmente de una gobernanza sólida basada en DAMA-DMBOK, que asegure calidad, seguridad y cumplimiento normativo.
+- Escalabilidad y flexibilidad: Las arquitecturas propuestas priorizan la separación de responsabilidades y el diseño evolutivo. El enfoque bottom-up de Kimball en Mercato y la arquitectura por capas en InfoHealth permiten crecimiento incremental sin comprometer la estabilidad del sistema.
+- Calidad como pilar transversal: La implementación de controles de calidad en cada etapa del flujo de datos (RAW→TRUSTED→CURATED) garantiza la confiabilidad necesaria para la toma de decisiones estratégicas en ambos sectores.
 
 [Volver](#m5-arquitectura-y-modelamiento-de-datos)
 
 ## Conclusión
 
-Conclusión ...
+La tecnología actúa como habilitador fundamental en la transformación organizacional hacia decisiones basadas en datos. Los casos analizados demuestran que las arquitecturas implementadas (Data Lake y Data Warehouse) resuelven problemas técnicos inmediatos mientras construyen capacidades analíticas sostenibles.
+
+El éxito depende de integrar estas herramientas tecnológicas con procesos organizacionales efectivos, donde la gobernanza facilita la adopción gradual y el impacto medible en el desempeño empresarial.Retry
+
+[Volver](#m5-arquitectura-y-modelamiento-de-datos)
