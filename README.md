@@ -70,7 +70,7 @@ Para la Gobernanza se aplicaron los principios del marco DAMA-DMBOK destacando l
 
 La arquitectura propuesta separa el almacenamiento y procesamiento, permitiendo manejar datos estructurados y no estructurados de forma escalable. Esto mejora la calidad de los datos, la seguridad y la velocidad de los reportes, lo que es vital para el sector salud.
 
-[Volver](#ing-datos-M5)
+[Volver](#m5-arquitectura-y-modelamiento-de-datos)
 
 ## Etapa 2: Enfoques para el Almacenamiento y Gestión de los Datos
 
