@@ -42,6 +42,8 @@ Diagrama de fuentes de datos:
 graph LR;
   DatosClínicos-->T;
   IoT-->T;
+  formularios-->T;
+  correos-->T;
   T-->L;
 ```
 
