@@ -46,8 +46,9 @@ graph LR;
   formularios-->ETL;
   IoT-->DataLake;
   correos-->DataLake;
-  DataLake-->ETL;
+  DataLake-->ETL2;
   ETL-->DataWarehouse;
+  ETL2-->DataWarehouse;
 ```
 
 ### Gobernanza
