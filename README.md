@@ -92,6 +92,7 @@ Para la Gobernanza se recomiendan las prácticas del DAMA-DMBOK destacando:
 - Gestión del ciclo de vida de los datos: se definir políticas para la retención de 3 años de datos, y luego pasa a archivo seguro de información médica.
 - Operaciones de datos: se establece procedimiento de monitoreo y backup diario. Y plan de recuperación de catastrofes de menos de 1 horas, garantizando disponibilidad y continuidad del servicio.
 
+[Volver](#m5-arquitectura-y-modelamiento-de-datos)
 
 ## Etapa 3: Calidad de los Datos
 
@@ -126,6 +127,7 @@ graph LR;
   CURATED-->DQ_Dashboard;
 ```
 
+[Volver](#m5-arquitectura-y-modelamiento-de-datos)
 
 ## Etapa 4: Modelamiento Multidimensional
 
@@ -167,6 +169,7 @@ El esquema al estar orientado a consultas simples realiza una desnormalización 
 
 Se complementa con la implementación de Slowly Changing Dimensions “Type 4”, para una tabla separada con data histórica (ej: más de 3 años).
 
+[Volver](#m5-arquitectura-y-modelamiento-de-datos)
 
 ## Análisis transversal
 
@@ -185,6 +188,7 @@ El enfoque bottom-up de Ralph Kimball proporciona flexibilidad incremental al pe
 
 El modelado multidimensional del cubo OLAP permitirá un análisis ágil y profundo de los datos de ventas, potenciando la toma de decisiones estratégicas basadas en información confiable y oportuna, clave para el crecimiento sostenible de Mercato.
 
+[Volver](#m5-arquitectura-y-modelamiento-de-datos)
 
 ## Conclusión
 
