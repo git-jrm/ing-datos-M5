@@ -38,7 +38,7 @@ Se propone una arquitectura basada en capas que separa responsabilidades:
 - Acceso: Dashboards de BI.
 - Seguridad: Cifrado de datos. Control de acceso.
 
-Diagrama fuentes de datos, ingesta, integración y almacenamiento:
+Diagrama de fuentes de datos, ingesta, integración y almacenamiento:
 
 ```mermaid
 graph LR;
