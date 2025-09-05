@@ -48,16 +48,12 @@ graph LR;
   ETL-->DataWarehouse;
   ELT-->DataLake;
 ```
-
-  - Calidad (Gobernanza)
-  - Consumo (Visualización)
-
 Herramientas por capas:
 
-· Almacenamiento: Amazon S3 (Data Lake), Amazon Redshift (Data Warehouse).
-· Procesamiento: Apache Spark y AWS Glue.
-· Acceso: Power BI, Tableau.
-· Seguridad: cifrado en reposo y en tránsito mediante AWS y acceso con IAM.
+- Almacenamiento: Amazon S3 (Data Lake), Amazon Redshift (Data Warehouse).
+- Procesamiento: Apache Spark y AWS Glue.
+- Acceso: Power BI, Tableau.
+- Seguridad: cifrado en reposo y en tránsito mediante AWS y acceso con IAM.
 
 ### Gobernanza
 
