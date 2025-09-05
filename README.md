@@ -94,7 +94,41 @@ Para la Gobernanza se recomiendan las prácticas del DAMA-DMBOK destacando:
 
 ## Etapa 3: Calidad de los Datos
 
+Objetivo: Diseñar un plan de aseguramiento de calidad de los datos, integrado a la arquitectura definida.
 
+Controles por etapa:
+
+- Ingesta (RAW): validación de formatos, detección de archivos corruptos, verificación de esquemas
+- Procesamiento (TRUSTED): reglas de limpieza, detección de duplicados, validación de rangos y dominios.
+- Curación (CURATED): consistencia referencial, completitud de datos, exactitud de métricas calculadas.
+
+Métricas e indicadores:
+
+Completitud (% datos faltantes), exactitud (% errores), consistencia (duplicados), puntualidad (latencia de carga).
+
+Monitoreo y calidad:
+
+Implementación de data quality dashboards con alertas automáticas cuando las métricas superen umbrales críticos (ej: >5% datos faltantes). Plan de remediación con escalamiento automático al equipo de datos y re-procesamiento de lotes afectados.
+
+Integración en arquitectura:
+
+Los controles de calidad se ejecutan en cada zona del Data Lake usando AWS Glue DataBrew y Apache Griffin, con resultados almacenados en tablas de auditoría para trazabilidad completa del linaje de datos.
+
+Diagrama
+```mermaid
+graph LR;
+  RAW-->|Validación básica|TRUSTED;
+  TRUSTED-->|Limpieza + reglas|CURATED;
+  CURATED-->|Métricas finales|DataWarehouse;
+  RAW-->DQ_Dashboard;
+  TRUSTED-->DQ_Dashboard;
+  CURATED-->DQ_Dashboard;RetryClaude does not have the ability to run the code it generates yet.
+
+```
+
+- Definir los controles, métricas e indicadores de calidad aplicables en cada etapa del flujo de datos:
+- Diseñar un proceso de monitoreo y remediación de la calidad:
+- Documentar la integración del plan de calidad en la arquitectura general:
 
 
 ## Etapa 4: Modelamiento Multidimensional
@@ -158,29 +192,4 @@ El modelado multidimensional del cubo OLAP permitirá un análisis ágil y profu
 
 ## Conclusión
 
-Conclusión y análisis transversal
-
-```mermaid
-graph TD;
-  E-->T;
-  T-->L;
-```
-
-```mermaid
-graph LR;
-  E-->T;
-  T-->L;
-```
-
-```dot
-diagraph G {
-  E -> T
-  T -> L
-}
-```
-```dot (enfine="circo")
-diagraph G {
-  E -> T
-  T -> L
-}
-```
+Conclusión ...
