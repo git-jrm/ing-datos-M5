@@ -38,6 +38,12 @@ Se propone una arquitectura basada en capas que separa responsabilidades:
 · Seguridad: Cifrado de datos. Control de acceso.
 
 Diagrama de fuentes de datos:
+```mermaid
+graph LR;
+  Datos clínicos-->T;
+  E-->T;
+  T-->L;
+```
 
 - Arquitectura de Data por Capas:
   - Ingesta (Fuentes de datos):
