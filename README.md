@@ -43,8 +43,8 @@ Diagrama que muestra la ingesta, integración y almacenamiento de los datos:
 ```mermaid
 graph LR;
   DatosClínicos-->ETL;
-  IoT-->ETL;
   formularios-->ETL;
+  IoT-->ELT;
   correos-->ELT;
   ETL-->DataWarehouse;
   ELT-->DataLake;
