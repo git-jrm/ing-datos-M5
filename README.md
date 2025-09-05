@@ -16,7 +16,7 @@ En esta página se desarrolla el proyecto del módulo 5 del bootcamp de ing de d
 
 ### Introducción
 
-Este documento tiene como objetivo principal abordar el desafío de la gestión de datos en la empresa InfoHealth. A través del rol de Arquitecto de Datos Junior, se propone un análisis exhaustivo de la situación actual, identificando las deficiencias clave que impiden la optimización de los procesos. 
+Este documento tiene como objetivo principal abordar el desafío de la gestión de datos en la empresa InfoHealth. A través del rol de Arquitecto de Datos, se propone un análisis exhaustivo de la situación actual, identificando las deficiencias clave que impiden la optimización de los procesos. 
 
 Basado en este diagnóstico, se presenta una propuesta de arquitectura de datos y un plan de mejora, diseñados para garantizar la escalabilidad, seguridad y accesibilidad, pilares fundamentales para el crecimiento sostenido de la organización en el sector salud.
 
@@ -50,6 +50,9 @@ graph LR;
   DataLake_TRUSTED-->DataLake_CURATED;
   ETL-->DataWarehouse;
   DataLake_CURATED-->DataWarehouse;
+  DataWarehouse-->DataMart_Medicina;
+  DataWarehouse-->DataMart_RRHH;
+  DataWarehouse-->DataMart_Administracion;
 ```
 
 ### Gobernanza
