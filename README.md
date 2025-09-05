@@ -125,10 +125,6 @@ graph LR;
   CURATED-->DQ_Dashboard;
 ```
 
-- Definir los controles, métricas e indicadores de calidad aplicables en cada etapa del flujo de datos:
-- Diseñar un proceso de monitoreo y remediación de la calidad:
-- Documentar la integración del plan de calidad en la arquitectura general:
-
 
 ## Etapa 4: Modelamiento Multidimensional
 
