@@ -44,7 +44,7 @@ graph LR;
   IoT-->ETL;
   formularios-->ETL;
   correos-->ETL;
-  T-->ETL;
+  ETL-->BasedeDatos;
 ```
 
 - Arquitectura de Data por Capas:
