@@ -5,10 +5,10 @@
 En esta página se desarrolla el proyecto del módulo 5 del bootcamp de ing de datos, llamado "**Proyecto Arquitectura Datos**". Donde abordaremos una solución integral para una empresa que presenta diversos desafíos los cuales se desarrollan por etapas cada una aborda aspectos diferentes.
 
 ## Índice:
-- [Etapa 1: Arquitectura de Datos](#)
-- [Etapa 2: Enfoques para el Almacenamiento y Gestión de los Datos](#)
-- [Etapa 3: Calidad de los Datos](#)
-- [Etapa 4: Modelamiento Multidimensional](#)
+- [Etapa 1: Arquitectura de Datos](#etapa-1-arquitectura-de-datos)
+- [Etapa 2: Enfoques para el Almacenamiento y Gestión de los Datos](#etapa-2-enfoques-para-el-almacenamiento-y-gestión-de-los-datos)
+- [Etapa 3: Calidad de los Datos](#etapa-3-calidad-de-los-datos)
+- [Etapa 4: Modelamiento Multidimensional](#etapa-4-modelamiento-multidimensional)
 - [Análisis transversal](#an%C3%A1lisis-transversal)
 - [Conclusión](#conclusi%C3%B3n)
 
