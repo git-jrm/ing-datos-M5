@@ -41,6 +41,7 @@ Diagrama de fuentes de datos:
 ```mermaid
 graph LR;
   E-->T;
+  Ea-->T;
   T-->L;
 ```
 
