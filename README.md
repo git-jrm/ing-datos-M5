@@ -9,6 +9,7 @@ En esta página se desarrolla el proyecto del módulo 5 del bootcamp de ing de d
 - [Etapa 2: Enfoques para el Almacenamiento y Gestión de los Datos](#)
 - [Etapa 3: Calidad de los Datos](#)
 - [Etapa 4: Modelamiento Multidimensional](#)
+- [Análisis transversal](#)
 - [Conclusión: ](#)
 
 ## Etapa 1: Arquitectura de Datos
@@ -111,13 +112,15 @@ Arquitectura de Data por Capas:
 
 
 
+## Análisis transversal
+
+análisis transversal
+
+
+
 ## Conclusión
 
 Conclusión y análisis transversal
- 
-
-#### ...
-
 
 ```mermaid
 graph TD;
