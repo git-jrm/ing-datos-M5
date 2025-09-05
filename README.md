@@ -40,7 +40,7 @@ Se propone una arquitectura basada en capas que separa responsabilidades:
 Diagrama de fuentes de datos:
 ```mermaid
 graph LR;
-  'Datos clínicos'-->T;
+  `Datos clínicos`-->T;
   Ea-->T;
   T-->L;
 ```
