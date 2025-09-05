@@ -44,11 +44,12 @@ Diagrama que muestra la ingesta, integración y almacenamiento de los datos:
 graph LR;
   DatosClínicos-->ETL;
   formularios-->ETL;
-  IoT-->DataLake;
-  correos-->DataLake;
-  DataLake-->ETL2;
+  IoT-->DataLake_RAW;
+  correos-->DataLake_RAW;
+  DataLake_RAW-->DataLake_TRUSTED;
+  DataLake_TRUSTED-->DataLake_CURATED;
   ETL-->DataWarehouse;
-  ETL2-->DataWarehouse;
+  DataLake_CURATED-->DataWarehouse;
 ```
 
 ### Gobernanza
@@ -82,19 +83,15 @@ Las herramientas y tecnologías sugeridas por capas son:
 
 Para la Gobernanza se recomiendan las prácticas del DAMA-DMBOK destacando:
 
-- Master Data Management: se define utilizar datos maestros únicos para: pacientes, médicos, historial, tratamientos. Para evitar duplicaciones y mantener la consistencia.
 - Gestión de metadatos: se implementa catálogo de datos centralizado, documentar fuentes, transformaciones y linaje para trazabilidad.
+- Master Data Management: se define utilizar datos maestros únicos para: pacientes, médicos, historial, tratamientos. Para evitar duplicaciones y mantener la consistencia.
 - Gestión del ciclo de vida de los datos: se definir políticas para la retención de 3 años de datos, y luego pasa a archivo seguro de información médica.
 - Operaciones de datos: se establece procedimiento de monitoreo y backup diario. Y plan de recuperación de catastrofes de menos de 1 horas, garantizando disponibilidad y continuidad del servicio.
 
 
 ## Etapa 3: Calidad de los Datos
 
-### Aspecto técnico
 
-### Diagrama
-
-### Justificación
 
 
 ## Etapa 4: Modelamiento Multidimensional
