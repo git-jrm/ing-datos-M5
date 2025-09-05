@@ -13,11 +13,31 @@ En esta página se desarrolla el proyecto del módulo 5 del bootcamp de ing de d
 
 ## Etapa 1: Arquitectura de Datos
 
-Objetivo: Diseñar un esquema arquitectónico robusto para la integración, almacenamiento y consumo de datos.
+### Introducción
 
-### Aspecto técnico
+Este documento tiene como objetivo principal abordar el desafío de la gestión de datos en la empresa InfoHealth. A través del rol de Arquitecto de Datos Junior, se propone un análisis exhaustivo de la situación actual, identificando las deficiencias clave que impiden la optimización de los procesos. 
 
-Para el diseño de la solución se han identificado 3 fuentes de datos los cuales son:
+Basado en este diagnóstico, se presenta una propuesta de arquitectura de datos y un plan de mejora, diseñados para garantizar la escalabilidad, seguridad y accesibilidad, pilares fundamentales para el crecimiento sostenido de la organización en el sector salud.
+
+### Diagnóstico
+
+Debido a la gran abundancia y diversidad de fuentes de datos junto a la falta de arquitectura de datos ha provocado un escenario donde ya se han reportado varios casos de duplicación de datos que sin trazabilidad genera riesgos de confianza, además se han detectado riesgos de seguridad en el acceso a la información.
+
+Esta situación ha afectado al equipo de analistas de datos ya que el tiempo empleado en preprocesar los datos ha crecido exponencialmente.
+
+Además la dirección y el staff médico han perdido la confianza en los reportes, por lo que es clave priorizar el proyecto ya que se requiere un sistema ágil y preciso para apoyar la operación del negocio.
+
+### Propuesta
+
+Se propone una arquitectura basada en capas que separa responsabilidades:
+
+· Fuentes de datos: Datos clínicos, IoT, formularios, correos.
+· Almacenamiento: Data Lake (no estructurados), Data Warehouse (estructurados).
+· Procesamiento: ETL/ELT.
+· Acceso: Dashboards de BI.
+· Seguridad: Cifrado de datos. Control de acceso.
+
+Diagrama de fuentes de datos:
 
 - Arquitectura de Data por Capas:
   - Ingesta (Fuentes de datos):
@@ -29,12 +49,33 @@ Para el diseño de la solución se han identificado 3 fuentes de datos los cuale
   - Calidad (Gobernanza)
   - Consumo (Visualización)
 
-### Diagrama ...
+Herramientas por capas:
 
-### Justificación
-principios de gobierno:
-escalabilidad:
-flexibilidad:
+· Almacenamiento: Amazon S3 (Data Lake), Amazon Redshift (Data Warehouse).
+· Procesamiento: Apache Spark y AWS Glue.
+· Acceso: Power BI, Tableau.
+· Seguridad: cifrado en reposo y en tránsito mediante AWS y acceso con IAM.
+
+### Principios aplicados
+
+Dentro de todas las consideraciones que se tuvieron según el marco DAMA-DMBOK se destacan las siguiente:
+
+· Calidad de datos: Garantizar la precisión y consistencia.
+
+· Arquitectura de datos: permite la escalabilidad del sistema, promueve el reuso de componentes y facilita la trazabilidad de los datos.
+
+· Modelado y diseño de datos: organiza los datos para una mejor comprensión y uso, asegurando su consistencia y eficiencia en el acceso.
+
+· Seguridad de datos: proteger la información sensible en reposo, en tránsito y en uso.
+
+· Integración e interoperabilidad de datos: unifica datos de diversas fuentes, permitiendo que sistemas diferentes se comuniquen de manera fluida.
+
+· Data warehousing & business intelligence: proporciona una vista consolidada de los datos para análisis, facilitando la toma de decisiones estratégicas.
+
+### Justificación de diseño
+
+La arquitectura propuesta separa el almacenamiento y procesamiento, permitiendo manejar datos estructurados y no estructurados de forma escalable. Esto mejora la calidad de los datos, la seguridad y la velocidad de los reportes, lo que es vital para el sector salud.
+
 
 ## Etapa 2: Enfoques para el Almacenamiento y Gestión de los Datos
 
