@@ -184,6 +184,6 @@ Se complementa con la implementación de Slowly Changing Dimensions “Type 4”
 
 La tecnología actúa como habilitador fundamental en la transformación organizacional hacia decisiones basadas en datos. Los casos analizados demuestran que las arquitecturas implementadas (Data Lake y Data Warehouse) resuelven problemas técnicos inmediatos mientras construyen capacidades analíticas sostenibles.
 
-El éxito depende de integrar estas herramientas tecnológicas con procesos organizacionales efectivos, donde la gobernanza facilita la adopción gradual y el impacto medible en el desempeño empresarial.Retry
+El éxito depende de integrar estas herramientas tecnológicas con procesos organizacionales efectivos, donde la gobernanza facilita la adopción gradual y el impacto medible en el desempeño empresarial
 
 [Volver](#m5-arquitectura-y-modelamiento-de-datos)
